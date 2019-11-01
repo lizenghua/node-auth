@@ -15,3 +15,12 @@ post {{url}}/register
 
 ### 查询用户列表
 get {{url}}/users
+
+### 登录
+post {{url}}/login
+{{json}}
+
+{
+    "username":"zhansan1",
+    "password":"123456"
+}

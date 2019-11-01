@@ -2,7 +2,7 @@
  * @message: 注册数据模型
  * @Author: lzh
  * @since: 2019-11-01 11:42:00
- * @lastTime: 2019-11-01 15:19:41
+ * @lastTime: 2019-11-01 15:49:04
  * @LastAuthor: Do not edit
  */
 const mongoose = require("mongoose")

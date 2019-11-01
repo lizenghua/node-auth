@@ -2,7 +2,7 @@
  * @message: 
  * @Author: lzh
  * @since: 2019-11-01 10:45:16
- * @lastTime: 2019-11-01 15:38:51
+ * @lastTime: 2019-11-01 15:52:53
  * @LastAuthor: Do not edit
  */
 const express = require("express")
@@ -17,8 +17,10 @@ app.use(express.json())
 app.get("/", () => console.log("hello world"))
 // api
 const register = require("./router/register.js")
+const login = require("./router/login.js")
 // 路由中间件
-app.use(BASE_URL, register);
+app.use(BASE_URL, register)
+app.use(BASE_URL, login)
 
 //开启服务器监听
 app.listen(port, () => console.log(`http://localhost:${port}`))
